@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <h2>This website will reconize your emotion</h2>
+    <span>turn on your camera and do your best acting</span>    
+    <h1 id="loading">Loading...</h1>
+    <div id="expression"></div>
+    <div class="videoWrapper">
+      <video id="video" autoplay muted playsinline></video>
+    </div>
+  </main>
+  <!-- Rounded switch -->
+  <div class="controls">
+    <div class="control">
+      <p>Video</p>
+      <label class="switch">
+        <input id="videoCheck" onclick='switchVideo(this);' type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="control">
+      <p>Face landmarks</p>
+      <label class="switch">
+        <input id="videoCheck" onclick='switchCanvas(this);' type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <span>Made by Edianzinho da massa v0.0.5 </span>
+  </div>
+</body>
+
+</html>
